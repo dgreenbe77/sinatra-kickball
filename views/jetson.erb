@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Awesome Kickball Super League Yeah</title>
+  <link rel="stylesheet" href="kickball.css">
+</head>
+
+<body>
+  <h1>Team Jetson Jets</h1>
+
+  <ul>
+    <% @jetson_info.each do |player| %>
+      <li><%= "#{player[0]} #{player[1]}, Position: #{player[2]}"%></li>
+    <% end %>
+  </ul>
+</body>
